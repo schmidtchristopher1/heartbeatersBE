@@ -1,50 +1,3 @@
-## Project Structure
-
-```
-└── BackEnd
-    └── app
-        └── __init__.py
-        └── config.py
-        └── development.db
-        └── init_db.py
-        └── models.py
-        └── routes
-            └── api.py
-            └── auth.py
-            └── files.py
-            └── graph_data.py
-            └── main.py
-            └── patient.py
-        └── static
-            └── css
-                └── styles.css
-            └── images
-            └── js
-                └── scripts.js
-        └── swagger
-            └── guides.py
-        └── templates
-            └── about.html
-            └── base.html
-            └── index.html
-        └── utilities
-            └── util.py
-    └── tests
-        └── __init__.py
-        └── test_auth.py
-        └── test_patient.py
-        └── test_utilities.py
-    └── uploads
-    └── .env
-    └── .env.template
-    └── .flaskenv
-    └── .gitignore
-    └── README.md
-    └── requirements-dev.txt
-    └── requirements.txt
-    └── run.py
-```
-
 ## Getting Started
 
 Follow these steps to set up the project for development.
@@ -60,7 +13,7 @@ Follow these steps to set up the project for development.
 1. **Clone the Repository**
 
    ```bash
-   git clone https://sda-shs@dev.azure.com/sda-shs/KASV/_git/HeartBeaters
+   git clone https://github.com/schmidtchristopher1/heartbeatersBE.git
    cd BackEnd
    ```
 
@@ -92,13 +45,13 @@ Follow these steps to set up the project for development.
    Create an `.env` file in the root directory and add necessary configurations:
 
    ```plaintext
-   SECRET_KEY=your_secret_key
-   DEV_DATABASE_URI=sqlite:///dev_db.sqlite3
-   PROD_DATABASE_URI=sqlite:///prod_db.sqlite3
-   JWT_SECRET_KEY=your_secret_key
-   FLASK_APP=run.py
-   FLASK_ENV=production/development
-   UPLOAD_FOLDER=path_to_your_uploads_folder
+    SECRET_KEY=your_secret_key
+    JWT_SECRET_KEY=your_jwt_secret_key
+    DATABASE_URI=sqlite:///heart_beaters.db
+    FLASK_APP=app.py
+    FLASK_ENV=production/development
+    UPLOAD_FOLDER=path_to_your_upload_folder
+
    ```
 
 ## Running the Application
@@ -124,12 +77,12 @@ flask run
 
 ### Accessing Swagger Documentation
 
-Swagger documentation is available at `/apidocs` by default:
+> Note: Swagger documentation is currently not functioning and will be fixed in a future update.
+
+Swagger documentation will be available at `/apidocs` by default:
 
 - **Development**: [http://127.0.0.1:5000/apidocs](http://127.0.0.1:5000/apidocs)
 - **Production**: Replace `127.0.0.1:5000` with your production domain.
-
-## Project Structure and Explanation
 
 ### Configurations (`config.py`)
 
