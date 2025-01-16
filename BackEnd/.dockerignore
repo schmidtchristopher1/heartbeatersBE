@@ -1,0 +1,5 @@
+tests/
+.env.template
+.gitignore
+README.md
+requirements-dev.txt

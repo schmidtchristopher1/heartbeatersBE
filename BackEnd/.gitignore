@@ -1,0 +1,82 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# VS Code settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# MacOS files
+.DS_Store
+
+# Flask and SQLAlchemy settings
+*.env
+.flaskenv
+instance/
+
+# Database files
+*.sqlite3
+*.db
+
+# Flask migration files
+migrations/
+
+# Logs and debug output
+*.log
+logs/
+debug.log
+
+# Python-specific files
+*.pyo
+
+# Pytest cache
+.pytest_cache/
+.tox/
+.cache/
+.coverage
+.coverage.*
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Node.js dependencies (if applicable)
+node_modules/
+
+# Build artifacts
+*.egg-info/
+dist/
+build/
+
+# Coverage reports
+htmlcov/
+.coverage
+coverage.xml
+
+# Static file cache for web apps
+*.sass-cache/
+*.eslintcache
+.cache/
+.angular/
+
+# Docker files
+docker-compose*.yml
+.Dockerfile
+.env.docker
+
+# Editor backups and swap files
+*.swp
+*~
+
+# Ignore files in uploads folder
+uploads/*

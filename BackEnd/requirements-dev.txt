@@ -1,0 +1,10 @@
+-r requirements.txt
+iniconfig==2.0.0
+packaging==24.2
+pluggy==1.5.0
+pytest==8.3.3
+referencing==0.35.1
+rpds-py==0.21.0
+setuptools==75.6.0
+six==1.16.0
+typing_extensions==4.12.2
